@@ -1,0 +1,179 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.eot');
+  src: local('../fonts/Raleway'), local('../fonts/Raleway-Regular'), url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Raleway-Regular.woff2') format('woff2'), url('../fonts/Raleway-Regular.woff') format('woff'), url('../fonts/Raleway-Regular.ttf') format('truetype'), url('../fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ralewaybold';
+  src: url('../fonts/raleway-bold.woff2') format('woff2'), url('../fonts/raleway-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* page layout background */
+
+#bg {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 1200px;
+  height: 2200px;
+  overflow: hidden;
+  z-index: 1;
+  filter: opacity(10%);
+}
+
+#container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+/* general styles */
+
+body {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+
+.base-color {
+  color: #58C8AB;
+}
+
+.main-wraper {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1050px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-family: 'ralewaybold';
+}
+
+/* navigation styles */
+
+nav {
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+
+nav .main-wraper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  width: 280px;
+  margin-right: 8px;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* header styles */
+
+header {
+  height: 490px;
+  border: 2px solid #58C8AB;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+header .main-wraper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.arrow {
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+  border-top: 30px solid #58C8AB;
+  margin: 0;
+  padding: 0;
+  float: left;
+  top: 200px;
+  position: relative;
+}
+
+.arrow:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+  border-top: 30px solid white;
+  display: inline-block;
+  left: 20px;
+  top: 15px;
+  -webkit-transform: translate(-40px, -50px);
+  position: absolute;
+}
+
+.arrow.left {
+  transform: rotate(90deg) translate(0px, 25px);
+  -webkit-transform: rotate(90deg) translate(0px, 25px);
+  -moz-transform: rotate(90deg) translate(0px, 25px);
+  -o-transform: rotate(90deg) translate(0px, 25px);
+  -ms-transform: rotate(90deg) translate(0px, 25px);
+}
+
+.arrow.right {
+  transform: rotate(270deg) translate(0px, 25px);
+  -webkit-transform: rotate(270deg) translate(0px, 25px);
+  -moz-transform: rotate(270deg) translate(0px, 25px);
+  -o-transform: rotate(270deg) translate(0px, 25px);
+  -ms-transform: rotate(270deg) translate(0px, 25px);
+}
+
+header .description {
+  width: 500px;
+  text-align: center;
+  margin: 130px 40px 110px 20px;
+}
+
+header h1 {
+  font-size: 2.9em;
+}
+
+header p {
+  margin: 45px 0;
+}
+
+header a {
+  font-size: 1.5em;
+  padding: 15px 45px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #58C8AB;
+}
+
+header .item-photo {
+  background-image: url('../images/black_chair.png');
+  height: 400px;
+  width: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+}
