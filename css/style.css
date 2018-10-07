@@ -18,14 +18,14 @@
 /* page layout background */
 
 #bg {
-  position: fixed;
+  position: absolute;
   left: 0px;
   top: 0px;
   width: 1200px;
   height: 2200px;
   overflow: hidden;
   z-index: 1;
-  filter: opacity(10%);
+  filter: opacity(20%);
 }
 
 #container {
@@ -148,7 +148,7 @@ header .main-wraper {
 header .description {
   width: 500px;
   text-align: center;
-  margin: 130px 40px 110px 20px;
+  margin: 125px 40px 110px 20px;
 }
 
 header h1 {
@@ -176,4 +176,70 @@ header .item-photo {
   background-size: cover;
   background-position: center;
   margin-top: 50px;
+}
+
+/* items section */
+
+section{
+  border: 2px solid red;
+}
+
+.items{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 25px 0 55px 0;
+}
+.items .item{
+  height: 220px;
+  width: 320px;
+}
+
+.clair{
+  background-image: url('../images/box1_img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.margarita{
+  background-image: url('../images/box2_img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.item .itemName{
+  width: 320px;
+  height: 60px;
+  background-color: white;
+  filter: opacity(30%);
+  margin-top: 150px;
+  padding: 10px;
+  position: absolute;
+}
+.item p{
+  position: relative;
+  top: 160px;
+  left: 15px;
+  font-size: 1.1em;
+}
+
+.items .note{
+  height: 252px;
+  width: 338px;
+  border: 1px solid #747474;
+  padding: 20px;
+}
+
+.items .underlined{
+  border-bottom: 5px solid #58C8AB;
+  width: 140px;
+}
+
+.note p{
+  margin-bottom: 15px;
+  color: #646464;
 }
