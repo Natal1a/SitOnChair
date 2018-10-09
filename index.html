@@ -45,34 +45,34 @@
     </header>
 
     <main>
-      <section>
-        <div class="main-wraper items">
-        <article class="item clair">
-          <div class="itemName">
-          </div>
-          <p class="bold underlined">Chair CLAIR</p>
+      <section id="items">
+        <div class="main-wraper">
+          <article class="item clair">
+            <div class="itemName">
+            </div>
+            <p class="bold underlined">Chair CLAIR</p>
 
-        </article>
-        <article class="item margarita">
-          <div class="itemName"></div>
-          <p class="bold underlined">Chair MARGARITA</p>
-        </article>
-        <article class="note">
-          <p class="bold underlined">Finds all inputs</p>
-          <p>Finds all inputs that are not checked and highlights the next sibling span. notice there is no change when clicking the checkbox since no click events have been linked
-          </p>
-          <p>Finds all inputs that are not checked and highlights the next sibling span.</p>
-        </article>
-      </div>
+          </article>
+          <article class="item margarita">
+            <div class="itemName"></div>
+            <p class="bold underlined">Chair MARGARITA</p>
+          </article>
+          <article class="note">
+            <p class="bold underlined">Finds all inputs</p>
+            <p>Finds all inputs that are not checked and highlights the next sibling span. notice there is no change when clicking the checkbox since no click events have been linked
+            </p>
+            <p>Finds all inputs that are not checked and highlights the next sibling span.</p>
+          </article>
+        </div>
       </section>
 
-      <section>
-        <div class="main-wraper price-list">
-          <h2 class="uppercase">Cennik</h2>
+      <section id="price-list">
+        <div class="main-wraper">
+          <h2 class="uppercase section-title">Cennik</h2>
 
           <div class="offers-container">
 
-            <div class="offer">
+            <article class="offer">
               <div class="outer-dot">
                 <div class="inner-dot">
                 </div>
@@ -89,8 +89,75 @@
                 <p>Serwis</p>
               </div>
               <a class="button-join uppercase" href="#">Dołącz</a>
+            </article>
+
+            <article class="offer ">
+              <div class="standard">
+                <div class="outer-dot">
+                  <div class="inner-dot">
+                  </div>
+                </div>
+
+                <h3>STANDARD PLAN</h3>
+
+                <div class="price">
+                  <p><span>95</span>99</p>
+                  <p>PLN/MSC</p>
+                </div>
+                <div class="included">
+                  <p>Zakup towaru + dowóz</p>
+                  <p>Serwis</p>
+                  <p>Gwarancja 5 lat</p>
+                </div>
+                <a class="button-join uppercase" href="#">Dołącz</a>
+              </div>
+            </article>
+
+            <article class="offer">
+              <div class="outer-dot">
+                <div class="inner-dot">
+                </div>
+              </div>
+
+              <h3>ADVANCE PLAN</h3>
+
+              <div class="price">
+                <p><span>221</span>99</p>
+                <p>PLN/MSC</p>
+              </div>
+              <div class="included">
+                <p>Zakup towaru + dowóz</p>
+                <p>Serwis</p>
+                <p>Gwarancja 5 lat</p>
+                <p>Porady projektanta</p>
+              </div>
+              <a class="button-join uppercase" href="#">Dołącz</a>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="main-wraper">
+          <h3 class="uppercase section-title">Kontakt</h3>
+          <div class="form">
+            <div class="form-left">
+              <label for="name"></label>
+              <input type="text" name="name" value="" id="name" placeholder="Imię">
+              <label for="email"></label>
+              <input type="email" name="surname" value="" id="email" placeholder="email">
+              <label for="message"></label>
+              <textarea name="message" rows="8" cols="80" id="message" placeholder="Wiadomość"></textarea>
             </div>
 
+            <div class="form-right">
+              <div class="red-chair">
+              </div>
+              <label for="agreement">Zgadzam się na przetwarzanie danych osobowych</label>
+              <input type="checkbox" name="" value="" id="agreement">
+              <input type="submit" name="" value="Wyślij" class="uppercase" id="submit-button">
           </div>
 
         </div>

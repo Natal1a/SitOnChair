@@ -15,6 +15,36 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light.woff2') format('woff2'),
+         url('../fonts/raleway-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayextralight';
+    src: url('../fonts/raleway-extralight.woff2') format('woff2'),
+         url('../fonts/raleway-extralight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('../fonts/raleway-thin.woff2') format('woff2'),
+         url('../fonts/raleway-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* page layout background */
 
 #bg {
@@ -184,7 +214,7 @@ section {
   border: 2px solid red;
 }
 
-.items {
+#items .main-wraper{
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -192,7 +222,7 @@ section {
   padding: 25px 0 55px 0;
 }
 
-.items .item {
+#items .item {
   height: 220px;
   width: 320px;
 }
@@ -228,14 +258,14 @@ section {
   font-size: 1.1em;
 }
 
-.items .note {
+#items .note {
   height: 252px;
   width: 338px;
   border: 1px solid #747474;
   padding: 20px;
 }
 
-.items .underlined {
+#items .underlined {
   border-bottom: 5px solid #58C8AB;
   width: 140px;
 }
@@ -245,19 +275,30 @@ section {
   color: #646464;
 }
 
+.section-title{
+  border-bottom: 7px solid #58C8AB;
+  width: 315px;
+  font-size: 1.5em;
+  padding-bottom: 7px;
+}
+
+
 /* pricing list styles */
 
-.price-list {
-  padding: 80px 0;
+#price-list {
+  padding: 50px 0;
+  /*background-color: #F1F1F1;*/
 }
 
 .offers-container {
-  padding: 55px 0 0;
+  padding: 70px 0 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .offer {
   height: 480px;
-  width: 330px;
+  width: 320px;
   border: 1px solid #C2C2C2;
   background-color: #F9F9F9;
 }
@@ -294,7 +335,7 @@ section {
   text-align: center;
 }
 
-.offer h3, p, a{
+.offer h3, .offer p, .offer a{
   text-align: center;
 }
 .button-join{
@@ -348,4 +389,103 @@ background-color: #F1F1F1;
   margin-top: 50px;
   position: relative;
   top: 20px;
+}
+
+
+/*.standard offer*/
+
+.standard{
+  height: 100%;
+}
+ .offer .standard{
+  border: 1px solid #58C8AB;
+  background-color: #58C8AB;
+}
+
+ .standard .outer-dot{
+
+  border: 1px solid #58C8AB;
+  background-color: #58C8AB;
+
+}
+
+.standard .inner-dot {
+  background-color: white;
+}
+
+.standard .price {
+  border-radius: 50%;
+  border: 1px solid #58C8AB;
+  color: #58C8AB;
+  background-color: white;
+}
+
+
+
+.standard .button-join {
+  background-color: white;
+  text-decoration: none;
+  color: #58C8AB;
+  bottom: 0;
+}
+
+.standard .offer h3 {
+  color: white;
+}
+
+.standard .included p:nth-child(2n+1) {
+background-color: white;
+}
+/*.offer .included p:nth-child(2n+2) {
+background-color: #F1F1F1;
+}*/
+
+
+/* form styles */
+
+#contact{
+  height: 550px;
+}
+
+div[class*="form"]{
+  display: flex;
+}
+
+.form-left, .form-right{
+  flex-direction: column;
+}
+
+input{
+  height: 50px;
+  margin: 20px 0;
+}
+
+#message{
+  height: 500px;
+}
+
+#submit-button{
+  width:100px;
+  background-color: #58C8AB;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: #f1f1f1;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+    font-family: 'ralewaythin', 'Arial', sans-serif;
+    padding: 10px;/* Chrome, Opera, Safari */
+} ::-moz-placeholder {
+  color: #f1f1f1;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  font-family: 'ralewaythin', 'Arial', sans-serif;
+padding: 10px;/* Firefox */ }
+::-ms-input-placeholder {
+  color: #f1f1f1;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+    font-family: 'ralewaythin', 'Arial', sans-serif;
+    padding: 10px;/* IE 10+ */
 }
