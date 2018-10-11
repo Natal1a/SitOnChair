@@ -455,6 +455,91 @@ div[class*="form"]{
   flex-direction: column;
 }
 
+.form-left{
+  width: 620px;
+}
+
+.form-right{
+  align-items: flex-end;
+  /*margin: auto;*/
+  /*margin-left: 50px;*/
+}
+
+.red-chair{
+  height: 300px;
+  width: 300px;
+  background-image: url('../images/red_chair.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.checkbox{
+  display: flex;
+  align-items: center;
+}
+
+input[type=checkbox]{
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+}
+
+.checkbox input {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  display: none;
+}
+
+.checkbox input + label{
+  width: 350px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  padding: 10px 10px 10px 64px;
+  min-height: 44px;
+  background-color: transparent;
+  color: #E4E4E4;
+  font-family: 'ralewaythin', 'Arial', sans-serif;
+  font-size: 1.5em;
+  transition: all 200ms ease;
+}
+
+
+.checkbox input + label::before{
+  content: "";
+  /*display: inline-block;*/
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  color: #fff;
+  transform: translateY(-50%);
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: all 200ms ease;
+}
+
+.checkbox input:checked + label::before {
+  background-image: url('../images/form_ok.jpg');
+background-size: 40px;
+background-repeat: no-repeat;
+background-position: center;
+  border: 1px solid #58C8AB;
+
+}
+
+
+/*[type=checkbox] + label {
+  flex-direction: row;
+  border: 1px solid red;
+}*/
+
 input{
   height: 50px;
   margin: 20px 0;
@@ -465,9 +550,10 @@ input{
 }
 
 #submit-button{
-  width:100px;
+  width:350px;
   background-color: #58C8AB;
   color: white;
+
 }
 
 ::-webkit-input-placeholder {
