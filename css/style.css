@@ -119,11 +119,24 @@ ol > li:hover .hidden{
   display: block;
 }
 
-
 .hidden{
   display: none;
 }
 
+nav ol ul {
+  position: relative;
+}
+
+nav ol ul:before {
+position: absolute;
+top: -7px;
+left:0px;
+display: inline-block;
+border-right: 75px solid transparent;
+border-bottom: 7px solid #000;
+border-left: 75px solid transparent;
+content: '';
+}
 /* header styles */
 
 header {
