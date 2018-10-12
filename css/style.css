@@ -36,25 +36,6 @@
   font-style: normal;
 }
 
-/* page layout background */
-
-#bg {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1200px;
-  height: 2200px;
-  overflow: hidden;
-  z-index: 1;
-  filter: opacity(20%);
-}
-
-#container {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-}
-
 /* general styles */
 
 body {
@@ -113,10 +94,21 @@ nav a {
 
 header {
   height: 490px;
-  border: 2px solid #58C8AB;
   display: flex;
   align-items: center;
   align-content: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fafafa+27,efefef+73,e8e8e8+81,e0e0e0+91,cfced8+100 */
+  background: #fafafa;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fafafa 27%, #efefef 73%, #e8e8e8 81%, #e0e0e0 91%, #cfced8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fafafa 27%, #efefef 73%, #e8e8e8 81%, #e0e0e0 91%, #cfced8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fafafa 27%, #efefef 73%, #e8e8e8 81%, #e0e0e0 91%, #cfced8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#cfced8', GradientType=0);
+  /* IE6-9 */
+  copy
 }
 
 header .main-wraper {
@@ -142,7 +134,7 @@ header .main-wraper {
   width: 0px;
   height: 0px;
   border: 20px solid transparent;
-  border-top: 30px solid white;
+  border-top: 30px solid #F5F5F5;
   display: inline-block;
   left: 20px;
   top: 15px;
@@ -200,10 +192,6 @@ header .item-photo {
 }
 
 /* items section */
-
-section {
-  border: 2px solid red;
-}
 
 #items .main-wraper {
   display: flex;
@@ -277,7 +265,7 @@ section {
 
 #price-list {
   padding: 50px 0;
-  /*background-color: #F1F1F1;*/
+  background-color: #F1F1F1;
 }
 
 .offers-container {
@@ -312,17 +300,12 @@ section {
 
 .price {
   border-radius: 50%;
-  border: 1px solid #C2C2C2;
+  border: 2px solid #C2C2C2;
   height: 125px;
   width: 125px;
   margin: 25px auto 35px;
   color: #C2C2C2;
   background-color: white;
-}
-
-.price p {
-  margin: auto;
-  text-align: center;
 }
 
 .offer h3, .offer p, .offer a {
@@ -347,14 +330,13 @@ section {
 }
 
 .included {
-  height: 200px;
+  height: 185px;
   width: 100%;
 }
 
 .offer .included p {
   width: 100%;
   height: 40px;
-  border: 1px solid red;
   padding: 10px;
   font-size: 1.5em;
   color: #9b9999;
@@ -369,16 +351,21 @@ section {
 }
 
 .price p:first-child {
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 30px;
 }
 
 .price p:first-child span {
-  font-size: 3em;
-  margin-top: 50px;
+  font-size: 3.8em;
+  margin-left: 10px;
   position: relative;
-  top: 20px;
+  top: 25px;
 }
+.price p:last-child {
+  font-size: 1.2em;
+}
+
+
 
 /*.standard offer*/
 
@@ -414,7 +401,7 @@ section {
   bottom: 0;
 }
 
-.standard .offer h3 {
+.offer .standard h3 {
   color: white;
 }
 
@@ -446,13 +433,78 @@ div[class*="form"] {
   margin: 0 0 0 50px;
 }
 
+input {
+  height: 65px;
+}
+
+input, #message {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #9b9999;
+  outline: none;
+  padding: 20px;
+  font-size: 1.5em;
+  font-family: 'ralewaythin', 'Arial', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+#message {
+  height: 200px;
+  resize: none;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+input:focus, #message:focus, input:valid, #message:valid{
+  border: 1px solid #58C8AB;
+}
+
+label{
+  font-family: 'ralewaythin', 'Arial', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 2em;
+  color: #9b9999;
+  position: absolute;
+}
+
+
+
+/* adaptive placeholder */
+
+.for-group {
+  position: relative;
+}
+
+.for-control-placeholder {
+  font-size: 2em;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  transition: all 200ms ease;
+  opacity: 0.3;
+}
+
+.for-control:focus + .for-control-placeholder,
+.for-control:valid + .for-control-placeholder {
+  position: absolute;
+  transform: translate3d(5px, -35px, 0);
+  font-size: 1.5em;
+  opacity: 1;
+  padding:3px;
+  background-color: white;
+}
+
+/* right side of form styles */
+
 .red-chair {
-  height: 250px;
+  height: 265px;
   width: 300px;
   background-image: url('../images/red_chair.png');
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/* chcekbox styles */
 
 .checkbox {
   display: flex;
@@ -478,12 +530,12 @@ input[type=checkbox] {
   cursor: pointer;
   position: relative;
   left: 0;
-  padding: 10px 10px 10px 64px;
+  padding: 10px 10px 10px 60px;
   min-height: 44px;
   background-color: transparent;
-  color: #E4E4E4;
+  color: #9b9999;
   font-family: 'ralewaythin', 'Arial', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.4em;
   transition: all 200ms ease;
 }
 
@@ -492,13 +544,12 @@ input[type=checkbox] {
   width: 44px;
   height: 44px;
   position: absolute;
-  left: 10px;
+  left: 0;
   top: 50%;
   color: #fff;
   transform: translateY(-50%);
-  border: 1px solid #ddd;
+  border: 1px solid #9b9999;
   box-sizing: border-box;
-  border-radius: 10px;
   transition: all 200ms ease;
 }
 
@@ -510,22 +561,6 @@ input[type=checkbox] {
   border: 1px solid #58C8AB;
 }
 
-input {
-  height: 65px;
-  margin: 20px 0;
-  margin: 10px 0;
-  border: 1px solid #58C8AB;
-}
-
-#message {
-  margin-top: 10px;
-  height: 200px;
-  border: 1px solid #58C8AB;
-  resize: none;
-  overflow: auto;
-  scroll-behavior: smooth;
-}
-
 #submit-button {
   width: 350px;
   background-color: #58C8AB;
@@ -533,31 +568,32 @@ input {
   font-family: 'Raleway', 'Arial', sans-serif;
   font-size: 2em;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
-::-webkit-input-placeholder {
-  color: #f1f1f1;
-  font-size: 2em;
-  letter-spacing: 0.05em;
-  font-family: 'ralewaythin', 'Arial', sans-serif;
-  padding: 10px;
-  /* Chrome, Opera, Safari */
+/* footer styles */
+
+footer {
+  color: #9b9999;
 }
 
-::-moz-placeholder {
-  color: #f1f1f1;
-  font-size: 2em;
-  letter-spacing: 0.05em;
-  font-family: 'ralewaythin', 'Arial', sans-serif;
-  padding: 10px;
-  /* Firefox */
+footer .main-wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 30px;
 }
 
-::-ms-input-placeholder {
-  color: #f1f1f1;
-  font-size: 2em;
-  letter-spacing: 0.05em;
-  font-family: 'ralewaythin', 'Arial', sans-serif;
-  padding: 10px;
-  /* IE 10+ */
+.footer-left {
+  letter-spacing: 0.2em;
+}
+
+.footer-right {
+  display: flex;
+  font-size: 1.5em;
+  align-items: center;
+}
+
+.icons {
+  margin-right: 75px;
 }
