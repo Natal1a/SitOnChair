@@ -78,16 +78,50 @@ nav .main-wraper {
   align-items: center;
 }
 
-nav ul {
-  display: flex;
-  width: 280px;
-  margin-right: 8px;
-  justify-content: space-between;
+ol, ul {
+  list-style-type:none;
+  height:40px;
+  line-height:40px;
+  text-align:center;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
+ol > li {
+  float:left;
+  width:150px;
+}
+
+ol a {
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  padding:0 5px;
+}
+
+ul > li a:hover {
+  background-color: #E4E4E4;
+  color: #000;
+}
+
+ul >li {
+  background-color: #000;
+  border-top: 1px solid #FAFAFA;
+}
+
+ol > li:hover {
+  background-color:#FAFAFA;
+}
+
+ol > li:hover > a {
+  color:#000;
+}
+
+ol > li:hover .hidden{
+  display: block;
+}
+
+
+.hidden{
+  display: none;
 }
 
 /* header styles */
