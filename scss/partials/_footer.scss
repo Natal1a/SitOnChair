@@ -1,0 +1,8 @@
+footer li{
+  &:hover{
+    background-color: magenta;
+  }
+  &:last-child{
+    float: right;
+  }
+}
