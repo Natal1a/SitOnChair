@@ -37,61 +37,145 @@ body {
     align-items: center;
   }
 }
+
 .nav-menu {
   &__item {
     float: left;
     width: 150px;
-    list-style-type:none;
-    height:40px;
-    line-height:40px;
-    text-align:center;
+    list-style-type: none;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
 
     &:hover {
-      background-color: #FAFAFA;
+      background-color: #58C8AB;
     }
 
-    &:hover > a{
+    &:hover > a {
       color: #000;
     }
 
-    &:hover .menu__hidden {
+    &:hover .nav-menu__hidden {
       display: block;
     }
 
     & a {
       color: #fff;
       text-decoration: none;
-      padding: 0 5px;
     }
   }
 
-  // arrow
-  & ul:before {
-    position: absolute;
-    top: 0;
-    left: 50px;
-    display: inline-block;
-    border-right: 20px solid transparent;
-    border-bottom: 10px solid #000;
-    border-left: 20px solid transparent;
-    content: '';
+  &__hidden {
+    list-style-type: none;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+    position: relative;
   }
-}
-.nav-menu__hidden {
-  list-style-type: none;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  display: none;
-  position: relative;
 
-  &--item:hover {
-    background-color: #E4E4E4;
+  &__hidden-item {
+    background-color: #58C8AB;
+    border-top: 1px solid #FAFAFA;
+  }
+
+  &__hidden-item:hover a {
     color: #000;
   }
+}
+/* .header styles */
+.header {
+  height: 490px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fafafa+27,efefef+73,e8e8e8+81,e0e0e0+91,cfced8+100 */
+  background: #fafafa;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fafafa 27%, #efefef 73%, #e8e8e8 81%, #e0e0e0 91%, #cfced8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fafafa 27%, #efefef 73%, #e8e8e8 81%, #e0e0e0 91%, #cfced8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fafafa 27%, #efefef 73%, #e8e8e8 81%, #e0e0e0 91%, #cfced8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= '#fafafa', endColorstr='#cfced8', GradientType=0);
+  /* IE6-9 */
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 
-  &--item {
-    background-color: #000;
-    border-top: 1px solid #FAFAFA;
+  &__description {
+    width: 500px;
+    text-align: center;
+    margin: 125px 40px 110px 20px;
+
+    & h1 {
+      font-size: 2.9em;
+    }
+
+    & p {
+      margin: 45px 0;
+    }
+  }
+
+  &__button {
+    font-size: 1.5em;
+    padding: 15px 45px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #58C8AB;
+  }
+
+  &__item-photo {
+    background-image: url("../images/black_chair.png");
+    height: 400px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__arrow {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top: 30px solid #58C8AB;
+    margin: 0;
+    padding: 0;
+    float: left;
+    top: 200px;
+    position: relative;
+  }
+
+  &__arrow:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top: 30px solid #F5F5F5;
+    display: inline-block;
+    left: 20px;
+    top: 15px;
+    -webkit-transform: translate(-40px, -50px);
+    position: absolute;
+  }
+
+  &__arrow.arrow-left {
+    transform: rotate(90deg) translate(0px, 25px);
+    -webkit-transform: rotate(90deg) translate(0px, 25px);
+    -moz-transform: rotate(90deg) translate(0px, 25px);
+    -o-transform: rotate(90deg) translate(0px, 25px);
+    -ms-transform: rotate(90deg) translate(0px, 25px);
+  }
+
+  &__arrow.arrow-right {
+    transform: rotate(270deg) translate(0px, 25px);
+    -webkit-transform: rotate(270deg) translate(0px, 25px);
+    -moz-transform: rotate(270deg) translate(0px, 25px);
+    -o-transform: rotate(270deg) translate(0px, 25px);
+    -ms-transform: rotate(270deg) translate(0px, 25px);
   }
 }
