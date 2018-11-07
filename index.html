@@ -96,23 +96,23 @@
           </article>
 
           <article class="offer offer--standard">
-              <div class="offer__outer-dot offer__outer-dot--standard">
-                <div class="offer__inner-dot offer__inner-dot--standard">
-                </div>
+            <div class="offer__outer-dot offer__outer-dot--standard">
+              <div class="offer__inner-dot offer__inner-dot--standard">
               </div>
+            </div>
 
-              <h3 class="offer__plan-name offer__plan-name--standard">STANDARD PLAN</h3>
+            <h3 class="offer__plan-name offer__plan-name--standard">STANDARD PLAN</h3>
 
-              <div class="offer__price offer__price--standard">
-                <p class="bold"><span>95</span>99</p>
-                <p>PLN/MSC</p>
-              </div>
-              <div class="offer__included offer__included--standard">
-                <p>Zakup towaru + dowóz</p>
-                <p>Serwis</p>
-                <p>Gwarancja 5 lat</p>
-              </div>
-              <a class="offer__button-join offer__button-join--standard uppercase" href="#">Dołącz</a>
+            <div class="offer__price offer__price--standard">
+              <p class="bold"><span>95</span>99</p>
+              <p>PLN/MSC</p>
+            </div>
+            <div class="offer__included offer__included--standard">
+              <p>Zakup towaru + dowóz</p>
+              <p>Serwis</p>
+              <p>Gwarancja 5 lat</p>
+            </div>
+            <a class="offer__button-join offer__button-join--standard uppercase" href="#">Dołącz</a>
           </article>
 
           <article class="offer">
@@ -193,37 +193,37 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section class="contact-section">
       <div class="container">
         <h3 class="uppercase section-title">Kontakt</h3>
-        <div class="form">
-          <div class="form-left">
-            <div class="for-group">
-              <input type="text" name="name" id="name" class="for-control" required>
-              <label class="for-control-placeholder" for="name">Imię</label>
+        <form class="contact-form">
+          <div class="contact-form__form-left">
+            <div class="adaptive-placeholder__for-group">
+              <input type="text" name="name" id="name" class="contact-form__input adaptive-placeholder__for-control" required>
+              <label class="adaptive-placeholder__for-control adaptive-placeholder__for-control--placeholder" for="name">Imię</label>
             </div>
-            <div class="for-group">
-              <input type="text" name="email" id="email" class="for-control" required>
-              <label class="for-control-placeholder" for="email">Email</label>
+            <div class="adaptive-placeholder__for-group">
+              <input type="text" name="email" id="email" class="contact-form__input adaptive-placeholder__for-control" required>
+              <label class="adaptive-placeholder__for-control adaptive-placeholder__for-control--placeholder" for="email">Email</label>
             </div>
 
-            <div class="for-group">
-              <textarea name="message" rows="8" cols="80" id="message" class="for-control" required></textarea>
-              <label class="for-control-placeholder" for="message">Wiadomość</label>
+            <div class="adaptive-placeholder__for-group">
+              <textarea name="message" rows="8" cols="80" id="message" class="contact-form__message adaptive-placeholder__for-control" required></textarea>
+              <label class="adaptive-placeholder__for-control--placeholder" for="message">Wiadomość</label>
             </div>
 
           </div>
 
-          <div class="form-right">
-            <div class="red-chair">
+          <div class="contact-form__form-right">
+            <div class="contact-form__red-chair">
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="" value="" id="agreement">
+              <input class="checkbox__type" type="checkbox" name="" value="" id="agreement">
               <label for="agreement">Zgadzam się na przetwarzanie danych osobowych</label>
             </div>
-            <input type="submit" name="" value="Wyślij" class="uppercase" class="submit-button">
+            <input type="submit" name="" value="Wyślij" class="uppercase submit-button">
           </div>
-        </div>
+        </form>
       </div>
     </section>
 
@@ -247,11 +247,8 @@
         </div>
       </div>
     </div>
-
-
   </footer>
-
-
+  
 </body>
 
 </html>
