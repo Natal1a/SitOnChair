@@ -142,34 +142,36 @@
     </section>
 
     <section class="order-form">
-      <div class="container">
-        <form class="chair-choice">
 
+      <form class="chair-choice">
+        <div class="order-form__container container">
           <div class="order-choice">
-            <h1>SKOMPONUJ SWOJE KRZESŁO</h1>
-            <select class="type">
+            <h3 class="uppercase section-title">SKOMPONUJ SWOJE KRZESŁO</h1>
+            <select class="order-choice__options order-choice__options--type">
               <option value="" disabled selected>Wybierz rodzaj</option>
               <option>Margarita</option>
               <option>Clair</option>
               <option>Selena</option>
             </select>
-            <select class="color">
+            <select class="order-choice__options order-choicecolor__options--color">
               <option value="" disabled selected>Wybierz kolor</option>
               <option>Czerwony</option>
               <option>Czarny</option>
               <option>Pomaranczowy</option>
             </select>
-            <select class="material">
+            <select class="order-choice__options order-choice__options--material">
               <option value="" disabled selected>Wybierz materiał</option>
               <option>Skóra</option>
               <option>Tkanina</option>
             </select>
-            <div class="transport">
-              <input type="checkbox" id="transport"><label for="transport">Transport</label>
+            <div class="order-choice__transport">
+              <div class="checkbox">
+              <input class="checkbox__type" type="checkbox" id="transport"><label for="transport">Transport</label>
+              </div>
             </div>
           </div>
 
-          <div class="order-img"></div>
+          <div class="order-choice__order-img"></div>
 
           <div class="order-summ">
             <h1>PODSUMOWANIE</h1>
@@ -186,11 +188,11 @@
                 <p>0</p>
               </div>
             </div>
-            <button class="place-order">ZAMAWIAM</button>
+            <input type="submit" name="" value="Zamawiam" class="uppercase submit-button">
           </div>
+        </div>
+      </form>
 
-        </form>
-      </div>
     </section>
 
     <section class="contact-section">
@@ -222,8 +224,7 @@
               <input class="checkbox__type" type="checkbox" name="" value="" id="agreement">
               <label for="agreement">Zgadzam się na przetwarzanie danych osobowych</label>
             </div>
-            <input type="submit" name="" value="Wyślij" class=
-          "uppercase submit-button">
+            <input type="submit" name="" value="Wyślij" class="uppercase submit-button">
           </div>
         </form>
       </div>
@@ -244,8 +245,7 @@
           <a href="#"><img src="images/pinterest.png" alt="pinterest"></a>
           <a href="#"><img src="images/twitter.png" alt="twitter"></a>
         </div>
-        <div class="uppercase">
-          Sit<span class="bold"> on</span> chair
+        <div class="uppercase">Sit<span class="bold"> on</span> chair
         </div>
       </div>
     </div>

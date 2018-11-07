@@ -390,7 +390,42 @@ body {
     }
   }
 }
-/* form styles */
+/* order form styles */
+.order-form {
+  height: 350px;
+  padding: 50px;
+}
+
+.order-form__container {
+  display: flex;
+}
+
+.order-choice__order-img {
+  height: 265px;
+  width: 300px;
+  background-image: url("../images/red_chair.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.order-choice__options {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-choice__options {
+  height: 65px;
+  width: 300px;
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-family: 'ralewaythin', 'Arial', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+option{
+    padding: 10px;
+}
+/* contact form styles */
 .contact-section {
   height: 550px;
   padding: 50px;
