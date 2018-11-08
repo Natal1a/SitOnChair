@@ -1,0 +1,79 @@
+/* .header styles */
+.header {
+  height: 490px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  @include gradient($header-gradient-colors, $header-gradient-from, $header-gradient-to);
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &__description {
+    width: 500px;
+    text-align: center;
+    margin: 125px 40px 110px 20px;
+
+    & h1 {
+      font-size: 2.9em;
+    }
+
+    & p {
+      margin: 45px 0;
+    }
+  }
+
+  &__button {
+    font-size: 1.5em;
+    padding: 15px 45px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: $base-color;
+  }
+
+  &__item-photo {
+    background-image: url("../images/black_chair.png");
+    height: 400px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__arrow {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top: 30px solid $base-color;
+    margin: 0;
+    padding: 0;
+    float: left;
+    top: 200px;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-top: 30px solid #F5F5F5;
+      display: inline-block;
+      left: 20px;
+      top: 15px;
+      -webkit-transform: translate(-40px, -50px);
+      position: absolute;
+    }
+
+    &.arrow-left {
+      @include arrow-direction(90deg);
+    }
+
+    &.arrow-right {
+      @include arrow-direction(270deg);
+    }
+  }
+}

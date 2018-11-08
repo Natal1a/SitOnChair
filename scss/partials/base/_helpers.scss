@@ -1,0 +1,36 @@
+/* general styles */
+body {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+
+.base-color {
+  color: $base-color;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1050px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-family: 'ralewaybold';
+}
+
+.section-title {
+  border-bottom: 7px solid $base-color;
+  width: 315px;
+  font-size: 1.5em;
+  padding-bottom: 7px;
+  &__left{
+    text-align: right;
+    margin-left: 35px;
+  }
+}

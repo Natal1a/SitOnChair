@@ -1,0 +1,25 @@
+/* footer styles */
+.footer {
+  color: #9b9999;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 30px;
+  }
+
+  &__left {
+    letter-spacing: 0.2em;
+  }
+
+  &__right {
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+  }
+
+  &__icons {
+    margin-right: 75px;
+  }
+}

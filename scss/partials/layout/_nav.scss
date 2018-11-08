@@ -1,0 +1,60 @@
+/* .navigation styles */
+.nav {
+  height: 40px;
+  background-color: black;
+  color: white;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav-menu {
+  &__item {
+    float: left;
+    width: 150px;
+    list-style-type: none;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    &:hover {
+      background-color: $base-color;
+    }
+
+    &:hover > a {
+      color: #000;
+    }
+
+    &:hover .nav-menu__hidden {
+      display: block;
+    }
+
+    & a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+    }
+  }
+
+  &__hidden {
+    list-style-type: none;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+    position: relative;
+  }
+
+  &__hidden-item {
+    background-color: $base-color;
+    border-top: 1px solid #FAFAFA;
+  }
+
+  &__hidden-item:hover a {
+    color: #000;
+  }
+}

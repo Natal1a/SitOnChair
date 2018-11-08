@@ -1,0 +1,67 @@
+/* contact form styles */
+.contact-section {
+  height: 550px;
+  padding: 50px;
+}
+
+input:focus,
+input:valid,
+textarea:focus,
+textarea:valid {
+  border: 1px solid $base-color;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+
+  &__form-left,
+  &__form-right {
+    flex-direction: column;
+  }
+
+  &__form-left {
+    width: 620px;
+    padding: 30px 0;
+  }
+
+  &__form-right {
+    margin: 0 0 0 50px;
+  }
+
+  &__input {
+    height: 65px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #9b9999;
+    outline: none;
+    padding: 20px;
+    font-size: 1.5em;
+    font-family: 'ralewaythin', 'Arial', sans-serif;
+    letter-spacing: 0.05em;
+  }
+
+  &__message {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #9b9999;
+    outline: none;
+    padding: 20px;
+    font-size: 1.5em;
+    font-family: 'ralewaythin', 'Arial', sans-serif;
+    letter-spacing: 0.05em;
+    height: 200px;
+    resize: none;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+}
+
+/* right side of form styles */
+.contact-form__red-chair {
+  height: 265px;
+  width: 300px;
+  background-image: url("../images/red_chair.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}

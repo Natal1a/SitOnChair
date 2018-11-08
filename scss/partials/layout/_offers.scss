@@ -1,0 +1,140 @@
+/* offers section styles */
+.offers-section {
+  padding: 50px 0;
+  background-color: #F1F1F1;
+
+  &__container {
+    padding: 70px 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.offer {
+  height: 480px;
+  width: 320px;
+  border: 1px solid #C2C2C2;
+  background-color: #F9F9F9;
+
+  &--standard {
+    background-color: $base-color;
+  }
+
+  a,
+  h3,
+  p {
+    text-align: center;
+  }
+
+  &__outer-dot {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #C2C2C2;
+    background-color: #fff;
+    margin: -35px auto -15px;
+
+    &--standard {
+      background-color: $base-color;
+      border: 1px solid $base-color;
+    }
+  }
+
+  &__inner-dot {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: #C2C2C2;
+    margin: 11px auto;
+
+    &--standard {
+      background-color: #fff;
+    }
+  }
+
+  &__price {
+    border-radius: 50%;
+    border: 2px solid #C2C2C2;
+    height: 125px;
+    width: 125px;
+    margin: 25px auto 35px;
+    color: #C2C2C2;
+    background-color: #fff;
+
+    &--standard {
+      color: $base-color;
+      border: 2px solid $base-color;
+    }
+  }
+
+  &__plan-name {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: $base-color;
+
+    &--standard {
+      color: #fff;
+    }
+  }
+
+  &__included {
+    height: 185px;
+    width: 100%;
+
+    p {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      font-size: 1.5em;
+      color: #9b9999;
+    }
+
+    p:nth-child(2n+1) {
+      background-color: #E4E4E4;
+    }
+
+    p:nth-child(2n+2) {
+      background-color: #F1F1F1;
+    }
+
+    &--standard {
+      p:nth-child(2n+1) {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__price {
+    p:first-child {
+      margin-top: 15px;
+      margin-bottom: 30px;
+
+      span {
+        font-size: 3.8em;
+        margin-left: 10px;
+        position: relative;
+        top: 25px;
+      }
+    }
+
+    p:last-child {
+      font-size: 1.2em;
+    }
+  }
+
+  &__button-join {
+    display: block;
+    width: 120px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+    text-decoration: none;
+    background-color: $base-color;
+    color: #fff;
+
+    &--standard {
+      background-color: #fff;
+      color: $base-color;
+    }
+  }
+}

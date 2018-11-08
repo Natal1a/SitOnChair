@@ -1,0 +1,101 @@
+/* chcekbox styles */
+.checkbox {
+  display: flex;
+  align-items: center;
+
+  &__type {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+  }
+
+  & {
+    input {
+      box-sizing: border-box;
+      margin: 0;
+      outline: none;
+      display: none;
+    }
+
+    input+label {
+      width: 350px;
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      left: 0;
+      padding: 10px 10px 10px 60px;
+      min-height: 44px;
+      background-color: transparent;
+      color: #9b9999;
+      font-family: 'ralewaythin', 'Arial', sans-serif;
+      font-size: 1.4em;
+      transition: all 200ms ease;
+    }
+
+    input+label::before {
+      content: "";
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      color: #fff;
+      transform: translateY(-50%);
+      border: 1px solid #9b9999;
+      box-sizing: border-box;
+      transition: all 200ms ease;
+    }
+
+    input:checked+label::before {
+      border: 1px solid $base-color;
+      background-image: url("../images/form_ok.jpg");
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+// .check-mark {
+//   position: absolute;
+//   left: 7px;
+//   font-size: 50px;
+//   color: $base-color;
+// }
+
+
+/* adaptive placeholder */
+.adaptive-placeholder {
+  &__for-group {
+    position: relative;
+  }
+
+  &__for-control--placeholder {
+    font-size: 2em;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    transition: all 350ms ease;
+    opacity: 0.3;
+  }
+
+  &__for-control:focus + &__for-control--placeholder,
+  &__for-control:valid + &__for-control--placeholder {
+    position: absolute;
+    transform: translate3d(5px, -35px, 0);
+    font-size: 1.5em;
+    opacity: 1;
+    padding: 3px;
+    background-color: #fff;
+  }
+}
+
+.submit-button {
+  width: 350px;
+  height: 65px;
+  background-color: $base-color;
+  color: #fff;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 2em;
+  border-radius: 10px;
+  margin-top: 20px;
+}

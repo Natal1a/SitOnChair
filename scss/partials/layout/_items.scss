@@ -1,0 +1,63 @@
+/* items section */
+.items-section {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 25px 0 55px 0;
+  }
+
+  &__item {
+    height: 220px;
+    width: 320px;
+  }
+
+  &__item-name {
+    width: 320px;
+    height: 60px;
+    background-color: white;
+    filter: opacity(30%);
+    margin-top: 150px;
+    padding: 10px;
+    position: absolute;
+  }
+
+  &__item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--clair {
+      background-image: url("../images/box1_img.jpg");
+    }
+
+    &--margarita {
+      background-image: url("../images/box2_img.jpg");
+    }
+
+    p {
+      position: relative;
+      top: 160px;
+      left: 15px;
+      font-size: 1.1em;
+    }
+  }
+
+  &__note {
+    height: 252px;
+    width: 338px;
+    border: 1px solid #747474;
+    padding: 20px;
+
+    p {
+      margin-bottom: 15px;
+      color: #646464;
+    }
+
+    &--underlined {
+      border-bottom: 5px solid $base-color;
+      width: 140px;
+    }
+  }
+}

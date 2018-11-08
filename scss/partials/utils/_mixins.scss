@@ -1,0 +1,21 @@
+@mixin gradient($gradient-colors, $gradient-from, $gradient-to){
+  background: $gradient-from;
+  /* Old browsers */
+  background: -moz-linear-gradient($gradient-colors);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient($gradient-colors);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient($gradient-colors);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  '$gradient-from', endColorstr='$gradient-to', GradientType=0);
+  /* IE6-9 */
+};
+
+
+@mixin arrow-direction($rotation-deg){
+  transform: rotate($rotation-deg) translate(0px, 25px);
+  -webkit-transform: rotate($rotation-deg) translate(0px, 25px);
+  -moz-transform: rotate($rotation-deg) translate(0px, 25px);
+  -o-transform: rotate($rotation-deg) translate(0px, 25px);
+  -ms-transform: rotate($rotation-deg) translate(0px, 25px);
+}

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Sit On Chair</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -146,7 +146,7 @@
       <form class="chair-choice">
         <div class="order-form__container container">
           <div class="order-choice">
-            <h3 class="uppercase section-title">SKOMPONUJ SWOJE KRZESŁO</h1>
+            <h3 class="uppercase section-title uppercase">Skomponuj swoje krzesło</h1>
             <select class="order-choice__options order-choice__options--type">
               <option value="" disabled selected>Wybierz rodzaj</option>
               <option>Margarita</option>
@@ -174,18 +174,21 @@
           <div class="order-choice__order-img"></div>
 
           <div class="order-summ">
-            <h1>PODSUMOWANIE</h1>
-            <div class="order-box">
-              <div class="order-box-specifies">
-                <div class="chair-type">
-                  <h2>Twoj fotel</h2>
+            <h1 class="section-title section-title__left uppercase">Podsumowanie</h1>
+            <div class="order-table">
+              <div class="order-table__specifies">
+                <div class="order-table__chair-type order-table__chair-type--name">
+                  <h2 class="order-table__left">Twoj fotel</h2>
+                  <p class="order-table__cost">0</p>
                 </div>
-                <div class="chair-type-costs">
+                <div class="order-table__chair-type order-table__chair-type--meterial">
+                  <p class="order-table__left">Typ materiału</p>
+                  <p class="order-table__cost">0</p>
                 </div>
               </div>
-              <div class="order-box-summ">
-                <h3>SUMA</h3>
-                <p>0</p>
+              <div class="order-table__chair-type order-table__chair-type--summ">
+                <h3 class="order-table__left uppercase">Suma</h3>
+                <p class="order-table__cost">0</p>
               </div>
             </div>
             <input type="submit" name="" value="Zamawiam" class="uppercase submit-button">

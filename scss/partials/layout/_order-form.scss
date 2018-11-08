@@ -1,0 +1,85 @@
+/* order form styles */
+.order-form {
+  height: 550px;
+  padding: 70px 50px;
+  background-color: #F1F1F1;
+}
+
+.order-form__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-choice__order-img {
+  height: 265px;
+  width: 300px;
+  margin: auto;
+  background-image: url("../images/red_chair.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  // filter: hue-rotate(150deg);
+}
+
+.order-choice__options {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-family: 'ralewaythin', 'Arial', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.order-table {
+  box-sizing: border-box;
+  font-size: 1.5em;
+  color: #9b9999;
+  background-color: #fff;
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+
+  &__cost {
+    border-left: 1px solid #9b9999;
+    width: 80px;
+    color: $base-color;
+    padding: 10px;
+    text-align: center;
+  }
+
+  &__left {
+    padding: 10px;
+  }
+
+  &__specifies {
+    height: 80%;
+  }
+
+  &__chair-type {
+    display: flex;
+    justify-content: space-between;
+
+    &--name {
+      height: 25%;
+      color: $base-color;
+    }
+
+    &--meterial {
+      height: 80%;
+    }
+
+    &--summ {
+      height: 25%;
+      display: flex;
+      justify-content: space-between;
+      height: 20%;
+      border-top: 1px solid #9b9999;
+    }
+  }
+}
