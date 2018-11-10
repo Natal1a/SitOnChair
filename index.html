@@ -3,40 +3,44 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sit On Chair</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <nav class="nav uppercase">
-    <div class="nav__container container">
+  <div class="navbar uppercase">
+    <div class="navbar__container ">
       <div>
         Sit <span class="base-color bold">on</span> chair
       </div>
-      <ul class="nav-menu">
-        <li class="nav-menu__item"><a href="#">O firmie</a>
-          <ul class="nav-menu__hidden">
-            <li class="nav-menu__hidden-item">
-              <a href="#">Aktualności</a></li>
-            <li class="nav-menu__hidden-item">
-              <a href="#">Nasz team</a></li>
-            <li class="nav-menu__hidden-item">
-              <a href="#">Historia</a></li>
+      <nav class="nav">
+        <div class="nav-menu">
+          <ul>
+            <li class="nav-menu__item"><a href="#">O firmie</a>
+              <ul class="nav-menu__hidden">
+                <li class="nav-menu__hidden-item">
+                  <a href="#">Aktualności</a></li>
+                <li class="nav-menu__hidden-item">
+                  <a href="#">Nasz team</a></li>
+                <li class="nav-menu__hidden-item">
+                  <a href="#">Historia</a></li>
+              </ul>
+            </li>
+            <li class="nav-menu__item"><a href="#">Galeria</a></li>
+            <li class="nav-menu__item"><a href="#">Kontakt</a></li>
           </ul>
-        </li>
-        <li class="nav-menu__item"><a href="#">Galeria</a></li>
-        <li class="nav-menu__item"><a href="#">Kontakt</a></li>
-      </ul>
+        </div>
+      </nav>
     </div>
-  </nav>
+  </div>
 
   <header class="header">
     <div class="header__container container">
       <a href="#" class="header__arrow arrow-left">
       </a>
       <div class="header__item-photo">
-
       </div>
       <div class="header__description">
         <h1 class="uppercase">Sit <span class="base-color bold"> on </span> our <span class="base-color bold"> chair</span></h1>
@@ -44,7 +48,6 @@
         <a class="header__button uppercase" href="#">zobacz więcej</a>
       </div>
       <a href="#" class="header__arrow arrow-right">
-
       </a>
     </div>
   </header>
@@ -74,7 +77,7 @@
       <div class="container">
         <h2 class="uppercase section-title">Cennik</h2>
 
-        <div class="offers-section__container">
+        <div class="offers-section__offers-container">
 
           <article class="offer">
             <div class="offer__outer-dot">
@@ -96,23 +99,23 @@
           </article>
 
           <article class="offer offer--standard">
-              <div class="offer__outer-dot offer__outer-dot--standard">
-                <div class="offer__inner-dot offer__inner-dot--standard">
-                </div>
+            <div class="offer__outer-dot offer__outer-dot--standard">
+              <div class="offer__inner-dot offer__inner-dot--standard">
               </div>
+            </div>
 
-              <h3 class="offer__plan-name offer__plan-name--standard">STANDARD PLAN</h3>
+            <h3 class="offer__plan-name offer__plan-name--standard">STANDARD PLAN</h3>
 
-              <div class="offer__price offer__price--standard">
-                <p class="bold"><span>95</span>99</p>
-                <p>PLN/MSC</p>
-              </div>
-              <div class="offer__included offer__included--standard">
-                <p>Zakup towaru + dowóz</p>
-                <p>Serwis</p>
-                <p>Gwarancja 5 lat</p>
-              </div>
-              <a class="offer__button-join offer__button-join--standard uppercase" href="#">Dołącz</a>
+            <div class="offer__price offer__price--standard">
+              <p class="bold"><span>95</span>99</p>
+              <p>PLN/MSC</p>
+            </div>
+            <div class="offer__included offer__included--standard">
+              <p>Zakup towaru + dowóz</p>
+              <p>Serwis</p>
+              <p>Gwarancja 5 lat</p>
+            </div>
+            <a class="offer__button-join offer__button-join--standard uppercase" href="#">Dołącz</a>
           </article>
 
           <article class="offer">
@@ -136,8 +139,8 @@
             <a class="offer__button-join uppercase" href="#">Dołącz</a>
           </article>
 
-        </div>
 
+        </div>
       </div>
     </section>
 
@@ -147,28 +150,28 @@
         <div class="order-form__container container">
           <div class="order-choice">
             <h3 class="uppercase section-title uppercase">Skomponuj swoje krzesło</h1>
-            <select class="order-choice__options order-choice__options--type">
-              <option value="" disabled selected>Wybierz rodzaj</option>
-              <option>Margarita</option>
-              <option>Clair</option>
-              <option>Selena</option>
-            </select>
-            <select class="order-choice__options order-choicecolor__options--color">
-              <option value="" disabled selected>Wybierz kolor</option>
-              <option>Czerwony</option>
-              <option>Czarny</option>
-              <option>Pomaranczowy</option>
-            </select>
-            <select class="order-choice__options order-choice__options--material">
-              <option value="" disabled selected>Wybierz materiał</option>
-              <option>Skóra</option>
-              <option>Tkanina</option>
-            </select>
-            <div class="order-choice__transport">
-              <div class="checkbox">
-              <input class="checkbox__type" type="checkbox" id="transport"><label for="transport">Transport</label>
+              <select class="order-choice__options order-choice__options--type">
+                <option value="" disabled selected>Wybierz rodzaj</option>
+                <option>Margarita</option>
+                <option>Clair</option>
+                <option>Selena</option>
+              </select>
+              <select class="order-choice__options order-choicecolor__options--color">
+                <option value="" disabled selected>Wybierz kolor</option>
+                <option>Czerwony</option>
+                <option>Czarny</option>
+                <option>Pomaranczowy</option>
+              </select>
+              <select class="order-choice__options order-choice__options--material">
+                <option value="" disabled selected>Wybierz materiał</option>
+                <option>Skóra</option>
+                <option>Tkanina</option>
+              </select>
+              <div class="order-choice__transport">
+                <div class="checkbox">
+                  <input class="checkbox__type" type="checkbox" id="transport"><label for="transport">Transport</label>
+                </div>
               </div>
-            </div>
           </div>
 
           <div class="order-choice__order-img"></div>

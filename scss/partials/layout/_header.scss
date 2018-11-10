@@ -1,35 +1,40 @@
-/* .header styles */
 .header {
-  height: 490px;
-  display: flex;
-  align-items: center;
-  align-content: center;
   @include gradient($header-gradient-colors, $header-gradient-from, $header-gradient-to);
 
   &__container {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    margin: auto;
+    @media only screen and (min-width: 63rem) {
+      flex-direction: row;
+      padding-bottom: 0rem;
+    }
   }
 
   &__description {
-    width: 500px;
+    max-width: 30rem;
     text-align: center;
-    margin: 125px 40px 110px 20px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    @media only screen and (min-width: 63rem) {
+      padding: 8rem 2rem 6rem;
+    }
+
 
     & h1 {
-      font-size: 2.9em;
+      font-size: 3rem;
+      line-height: normal;
     }
 
     & p {
-      margin: 45px 0;
+      padding: 3rem 0;
     }
   }
 
   &__button {
     font-size: 1.5em;
-    padding: 15px 45px;
-    border-radius: 10px;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
     text-decoration: none;
     color: #fff;
     background-color: $base-color;
@@ -37,34 +42,38 @@
 
   &__item-photo {
     background-image: url("../images/black_chair.png");
-    height: 400px;
-    width: 350px;
+    height: 25rem;
+    width: 22rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0 auto;
+    @media only screen and (min-width: 63rem) {
+      margin-top: 4rem;
+    }
   }
-
+@media only screen and (min-width: 63rem) {
   &__arrow {
     width: 0;
     height: 0;
-    border: 20px solid transparent;
-    border-top: 30px solid $base-color;
+    border: 1.25rem solid transparent;
+    border-top: 2rem solid $base-color;
     margin: 0;
     padding: 0;
     float: left;
-    top: 200px;
+    top: 15rem;
     position: relative;
 
     &:before {
       content: '';
       width: 0;
       height: 0;
-      border: 20px solid transparent;
-      border-top: 30px solid #F5F5F5;
+      border: 1.25rem solid transparent;
+      border-top: 2rem solid #F5F5F5;
       display: inline-block;
-      left: 20px;
-      top: 15px;
-      -webkit-transform: translate(-40px, -50px);
+      left: 1.25rem;
+      top: 1rem;
+      -webkit-transform: translate(-2.5rem, -3.25rem);
       position: absolute;
     }
 
@@ -76,4 +85,5 @@
       @include arrow-direction(270deg);
     }
   }
+}
 }

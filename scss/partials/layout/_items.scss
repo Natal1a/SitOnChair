@@ -1,25 +1,30 @@
-/* items section */
 .items-section {
   &__container {
     display: flex;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    padding: 25px 0 55px 0;
+    flex-direction: column;
+    @media only screen and (min-width: 63rem) {
+      padding: 2rem 0;
+      justify-content: space-between;
+      flex-direction: row;
+    }
   }
 
   &__item {
-    height: 220px;
-    width: 320px;
+    height: 14rem;
+    width: 20rem;
+    margin: 1rem auto;
+  @media only screen and (min-width: 63rem) {
+    margin: 0 auto;
+    }
   }
 
   &__item-name {
-    width: 320px;
-    height: 60px;
+    width: 20rem;
+    height: 4rem;
     background-color: white;
     filter: opacity(30%);
-    margin-top: 150px;
-    padding: 10px;
+    margin-top: 9rem;
+    padding: 0.5rem;
     position: absolute;
   }
 
@@ -38,26 +43,32 @@
 
     p {
       position: relative;
-      top: 160px;
-      left: 15px;
-      font-size: 1.1em;
+      top: 10rem;
+      left: 1rem;
+      font-size: 1rem;
     }
   }
 
   &__note {
-    height: 252px;
-    width: 338px;
+    height: 15rem;
+    width: 20rem;
     border: 1px solid #747474;
-    padding: 20px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    @media only screen and (min-width: 63rem) {
+    width: 21rem;
+    margin: auto;
+    }
+
 
     p {
-      margin-bottom: 15px;
+      margin-bottom: 1rem;
       color: #646464;
     }
 
     &--underlined {
-      border-bottom: 5px solid $base-color;
-      width: 140px;
+      border-bottom: 0.25rem solid $base-color;
+      width: 8.5rem;
     }
   }
 }

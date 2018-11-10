@@ -1,34 +1,43 @@
-/* order form styles */
+.order-summ{
+  margin: auto;
+}
 .order-form {
-  height: 550px;
-  padding: 70px 50px;
   background-color: #F1F1F1;
+  padding: 1.5rem;
 }
 
 .order-form__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  @media only screen and (min-width: 63rem) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .order-choice__order-img {
-  height: 265px;
-  width: 300px;
+  height: 17rem;
+  width: 19rem;
   margin: auto;
   background-image: url("../images/red_chair.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  // filter: hue-rotate(150deg);
 }
 
 .order-choice__options {
   display: flex;
-  flex-direction: column;
-  width: 350px;
-  margin: 10px 0;
+  width: 21.875rem;
+  margin: 0.5rem auto;
   font-size: 1.5em;
   font-family: 'ralewaythin', 'Arial', sans-serif;
   letter-spacing: 0.05em;
+}
+
+.order-choice__transport{
+  margin: 1rem auto;
+  max-width: 22rem;
 }
 
 .order-table {
@@ -36,25 +45,25 @@
   font-size: 1.5em;
   color: #9b9999;
   background-color: #fff;
-  width: 350px;
-  height: 300px;
-  border-radius: 10px;
+  width: 22rem;
+  height: 19rem;
+  border-radius: 0.5rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 0.5rem;
+  margin: 1.5rem auto;
 
   &__cost {
     border-left: 1px solid #9b9999;
-    width: 80px;
+    width: 5rem;
     color: $base-color;
-    padding: 10px;
+    padding: 0.5rem;
     text-align: center;
   }
 
   &__left {
-    padding: 10px;
+    padding: 0.5rem;
   }
 
   &__specifies {

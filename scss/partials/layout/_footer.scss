@@ -4,22 +4,46 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
     align-items: center;
-    padding: 20px 0 30px;
+    padding: 1.5rem 0 2rem;
+    margin: auto;
+    @media only screen and (min-width: 63rem) {
+  justify-content: space-between;
+  flex-direction: row;
+    }
   }
 
   &__left {
     letter-spacing: 0.2em;
+    text-align: center;
+    @media only screen and (min-width: 63rem) {
+
+    }
   }
 
   &__right {
     display: flex;
     font-size: 1.5em;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    @media only screen and (min-width: 63rem) {
+      flex-direction: row;
+      margin-bottom: 0;
+    }
   }
 
   &__icons {
-    margin-right: 75px;
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    width: 20rem;
+    @media only screen and (min-width: 63rem) {
+      margin-right: 5rem;
+      margin-bottom: 0.5rem;
+      justify-content: space-between;
+      width: 10rem;
+  }
   }
 }
