@@ -4,9 +4,9 @@
   align-items: center;
 
   &__type {
-    width: 3.125rem;
-    height: 3.125rem;
-    padding: 1.25rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
   }
 
   & {
@@ -23,7 +23,7 @@
       cursor: pointer;
       position: relative;
       left: 0;
-      padding: 0.625rem 0.625rem 0.625rem 3.75rem;
+      padding: 0.5rem 0.5rem 0.5rem 3.5rem;
       min-height: 2.75rem;
       background-color: transparent;
       color: #9b9999;
@@ -34,8 +34,8 @@
 
     input+label::before {
       content: "";
-      width: 2.75rem;
-      height: 2.75rem;
+      width: 2.5rem;
+      height: 2.5rem;
       position: absolute;
       left: 0;
       top: 50%;
@@ -70,8 +70,8 @@
   &__for-control--placeholder {
     font-size: 2em;
     position: absolute;
-    top: 1.875rem;
-    left: 0.625rem;
+    top: 2rem;
+    left: 5rem;
     transition: all 350ms ease;
     opacity: 0.3;
   }
@@ -94,8 +94,8 @@
   color: #fff;
   font-family: 'Raleway', 'Arial', sans-serif;
   font-size: 2em;
-  border-radius: 0.625rem;
-  margin-top: 1.25rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .section-title {
@@ -104,16 +104,13 @@
   font-size: 1.5em;
   padding-bottom: 0.5rem;
   margin: auto;
-  /***  MOBILE FIRST ***/
   @media only screen and (min-width: 63rem) {
     margin: 0;
   }
 
   &__left {
     text-align: right;
-    // margin-left: 2rem;
     margin: auto;
-    /***  MOBILE FIRST ***/
     @media only screen and (min-width: 63rem) {
       margin-left: 2rem;
     }
