@@ -11,14 +11,16 @@
 
 <body>
   <div class="navbar uppercase">
-    <div class="navbar__container ">
-      <div>
+    <div class="navbar__container container">
+      <a href="#" class="logo">
         Sit <span class="base-color bold">on</span> chair
-      </div>
+      </a>
       <nav class="nav">
+        <label class="nav__hamburger" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
         <div class="nav-menu">
           <ul>
-            <li class="nav-menu__item"><a href="#">O firmie</a>
+            <li class="nav-menu__item nav-menu__item-open-menu">O firmie<label class="open-menu-label" for="open-menu"> &nbsp; &#8744;</label><input type="checkbox" id="open-menu">
               <ul class="nav-menu__hidden">
                 <li class="nav-menu__hidden-item">
                   <a href="#">Aktualności</a></li>

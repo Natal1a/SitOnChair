@@ -1,60 +1,119 @@
-/* .navigation styles */
 .navbar {
-  height: 40px;
-  background-color: black;
-  color: white;
+  height: 3rem;
+  background-color: #000;
+  color: #fff;
+  line-height: 3rem;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
 
   &__container {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0;
+  }
+}
+
+.logo {
+  position: absolute;
+  padding-left: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav {
+  text-align: right;
+
+  &__hamburger {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: normal;
   }
 }
 
 .nav-menu {
+  margin: auto;
+  display: none;
+
   &__item {
-    float: left;
-    width: 150px;
-    list-style-type: none;
-    height: 40px;
-    line-height: 40px;
     text-align: center;
-
-    &:hover {
-      background-color: $base-color;
-    }
-
-    &:hover > a {
-      color: #000;
-    }
-
-    &:hover .nav-menu__hidden {
-      display: block;
-    }
+    background-color: #000;
+    border-top: 1px solid #fff;
 
     & a {
-      color: #fff;
       text-decoration: none;
+      color: #fff;
       display: block;
     }
   }
 
   &__hidden {
-    list-style-type: none;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
     display: none;
-    position: relative;
   }
 
   &__hidden-item {
     background-color: $base-color;
-    border-top: 1px solid #FAFAFA;
+    border-bottom: 1px solid #000;
   }
 
-  &__hidden-item:hover a {
-    color: #000;
+  &__item-open-menu {
+    cursor: pointer;
+    position: relative;
+  }
+}
+
+.open-menu-label {
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  left: 50px;
+}
+
+#open-menu:checked + .nav-menu__hidden {
+  display: block;
+}
+
+#toggle:checked + .nav-menu {
+  display: block;
+}
+
+#open-menu,
+#toggle {
+  display: none;
+}
+@media only screen and (min-width: 40rem) {
+  .nav__hamburger,
+  .open-menu-label {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+    float: right;
+  }
+
+  .nav-menu__item {
+    float: left;
+    width: 150px;
+    border-top: none;
+    height: 3rem;
+    line-height: 3rem;
+
+    &:hover {
+      background-color: $base-color;
+    }
+  }
+
+  .nav-menu__item-open-menu:hover {
+    .nav-menu__hidden {
+      display: block;
+    }
+  }
+
+  .nav-menu__hidden-item {
+    background-color: #000;
+
+    &:hover {
+      background-color: $base-color;
+    }
   }
 }

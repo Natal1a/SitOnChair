@@ -13,37 +13,39 @@ textarea:valid {
   display: flex;
   flex-direction: column;
   @media only screen and (min-width: 63rem) {
-  justify-content: space-between;
-  flex-direction: row;
-}
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
   &__form-left,
   &__form-right {
-@media only screen and (min-width: 63rem) {
-flex-direction: column;
-}
-
+    @media only screen and (min-width: 63rem) {
+      flex-direction: column;
+    }
   }
 
   &__form-left {
     margin: auto;
     max-width: 39rem;
     @media only screen and (min-width: 63rem) {
-   width: 39rem;
+      width: 39rem;
+      margin: 0;
     }
   }
 
   &__form-right {
     margin: 0 auto;
     @media only screen and (min-width: 63rem) {
-    margin: 0 0 0 3.125rem;
+      margin: 0 0 0 3rem;
+    }
   }
-  }
-  &__input, &__message {
+
+  &__input,
+  &__message {
     width: 100%;
-    margin: 0.625rem 0;
+    margin: 0.5rem 0;
     border: 1px solid #9b9999;
     outline: none;
-    padding: 1.25rem;
     font-size: 1.5em;
     font-family: 'ralewaythin', 'Arial', sans-serif;
     letter-spacing: 0.05em;

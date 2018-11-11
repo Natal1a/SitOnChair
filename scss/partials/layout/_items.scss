@@ -13,8 +13,8 @@
     height: 14rem;
     width: 20rem;
     margin: 1rem auto;
-  @media only screen and (min-width: 63rem) {
-    margin: 0 auto;
+    @media only screen and (min-width: 63rem) {
+      margin: 0 auto;
     }
   }
 
@@ -56,10 +56,9 @@
     padding: 1.5rem;
     margin: 1rem auto;
     @media only screen and (min-width: 63rem) {
-    width: 21rem;
-    margin: auto;
+      width: 21rem;
+      margin: auto;
     }
-
 
     p {
       margin-bottom: 1rem;
